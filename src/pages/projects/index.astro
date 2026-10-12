@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectEntry from '../../components/ProjectEntry.astro';
+import { projects } from '../../data/projects';
+---
+<BaseLayout title="全部项目">
+  <section class="container project-catalog">
+    <header class="catalog-header"><p class="section-kicker">PROJECTS</p><h1>全部项目</h1><p>轮腿机器人、视觉与云台联调、数学建模竞赛。</p></header>
+    {projects.map(project => <ProjectEntry project={project} showEvidence />)}
+  </section>
+</BaseLayout>

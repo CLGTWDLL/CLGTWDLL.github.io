@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { profile } from '../data/profile';
+import { projects } from '../data/projects';
+---
+<BaseLayout title="About">
+  <article class="container text-page">
+    <h1>About</h1>
+    <p>{profile.name} / {profile.englishName} · {profile.university}</p>
+    <p>{profile.introduction}</p>
+    <section class="detail-section"><h2>项目经历</h2>
+      <ul>{projects.map(project => <li><a href={`/projects/${project.slug}/`}>{project.name}</a>：{project.contributionSummary}</li>)}</ul>
+    </section>
+    <section class="detail-section"><h2>Education</h2>
+      <p>{profile.university} · {profile.universityEnglish}</p>
+      <p class="muted">{[profile.college, profile.major, profile.educationPeriod].filter(Boolean).join(' · ') || '专业与就读时间待补充。'}</p>
+    </section>
+    <section class="detail-section"><h2>联系</h2>
+      <p><a href={`mailto:${profile.email}`}>{profile.email}</a></p>
+      <p><a href={profile.github} target="_blank" rel="noopener noreferrer">GitHub ↗</a> · <a href="/resume/">简历</a></p>
+    </section>
+  </article>
+</BaseLayout>

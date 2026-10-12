@@ -1,0 +1,12 @@
+---
+import Icon from './Icon.astro';
+import { profile } from '../data/profile';
+---
+<footer class="container site-footer">
+  <p>© {new Date().getFullYear()} {profile.name}<span class="footer-divider">|</span>{profile.university}{profile.college}</p>
+  <div class="footer-contact">
+    <a href={`mailto:${profile.email}`} aria-label="发送邮件"><Icon name="mail" size={19} /></a>
+    <a href={profile.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub 主页"><Icon name="github" size={19} /></a>
+    <a href={`mailto:${profile.email}`}>{profile.email}</a>
+  </div>
+</footer>

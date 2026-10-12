@@ -1,0 +1,14 @@
+{
+  "execution": "local_offline_environment",
+  "official_simulator_used": false,
+  "algorithm": "q3_joint_replan",
+  "version": "ede0b2c65ab649f3",
+  "requested_runs": 40,
+  "completed_runs": 40,
+  "all_completed": true,
+  "mean_virtual_s": 3187.64622431961,
+  "median_virtual_s": 3164.4932514644897,
+  "source_count_total": 515,
+  "cleared_total": 515,
+  "source": "question3/data/本地40次运行/batch-20260913-183116-6270521a/batch_summary.json"
+}

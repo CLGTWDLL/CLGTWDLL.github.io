@@ -1,0 +1,5 @@
+---
+interface Props { url: string | null; }
+const { url } = Astro.props;
+---
+{url && <video class="project-video" controls preload="metadata" aria-label="项目演示视频"><source src={url} /><p><a href={url}>打开项目视频</a></p></video>}

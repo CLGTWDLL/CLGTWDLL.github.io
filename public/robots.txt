@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://clgtwdll.github.io/sitemap.xml

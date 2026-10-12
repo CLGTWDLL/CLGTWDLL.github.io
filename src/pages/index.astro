@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectEntry from '../components/ProjectEntry.astro';
+import Icon from '../components/Icon.astro';
+import { profile } from '../data/profile';
+import { projects } from '../data/projects';
+---
+<BaseLayout>
+  <section class="hero-banner" aria-labelledby="profile-name">
+    <div class="campus-clip" aria-hidden="true"><img src="/images/campus-reference.png" alt="" width="1024" height="1536" /></div>
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1 id="profile-name">{profile.name}<span>{profile.englishName}</span></h1>
+        <p class="affiliation">{profile.university} · {profile.college}<span class="affiliation-divider">|</span>{profile.interests.join(' / ')}</p>
+        <div class="contact-links">
+          <a href={`mailto:${profile.email}`}><Icon name="mail" size={21} />{profile.email}</a>
+          <a href={profile.github} target="_blank" rel="noopener noreferrer"><Icon name="github" size={21} />GitHub ↗</a>
+          <a href={profile.resumeUrl ?? '/resume/'}><Icon name="file" size={21} />简历 ↗</a>
+        </div>
+        <p class="biography">{profile.introduction}</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">查看项目 <Icon name="down" size={15} /></a>
+          <a class="button button-secondary" href={profile.github} target="_blank" rel="noopener noreferrer">GitHub <Icon name="external" size={15} /></a>
+          <a class="button button-secondary" href={profile.resumeUrl ?? '/resume/'} download={profile.resumeUrl ? 'lihaohan-cv.pdf' : undefined}>简历下载 <Icon name="external" size={15} /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container home-page">
+    <section id="projects" class="projects-section" aria-labelledby="projects-heading">
+      <header class="section-header">
+        <div><p class="section-kicker">PROJECTS</p><h2 id="projects-heading">Selected Projects</h2></div>
+        <a class="all-projects-link" href="/projects/">查看全部项目 <Icon name="right" size={14} /></a>
+      </header>
+      {projects.map(project => <ProjectEntry project={project} />)}
+    </section>
+    <div class="academic-grid">
+      <section id="education" class="info-panel education-panel">
+        <h2><Icon name="education" size={27} />Education</h2>
+        <div class="education-timeline">
+          <p><strong>{profile.university}</strong><span class="inline-meta">{profile.universityEnglish}</span></p>
+          <p>{profile.college}</p>
+          {profile.major && <p>{profile.major}</p>}
+          <p class="education-period">{profile.educationPeriod}</p>
+        </div>
+      </section>
+      <section id="awards" class="info-panel awards-panel">
+        <h2><Icon name="award" size={27} />Awards</h2>
+        <ul class="awards-list">{profile.awards.map(award => <li><span>{award.name}</span>{award.year && <span class="award-year">{award.year}</span>}</li>)}</ul>
+      </section>
+      <section id="interests" class="info-panel interests-panel">
+        <h2><Icon name="bulb" size={27} />Research Interests</h2>
+        <p>{profile.interests.join(' / ')}：轮腿机构建模与控制、感知部署及系统联调。</p>
+      </section>
+    </div>
+  </div>
+</BaseLayout>

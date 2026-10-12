@@ -1,0 +1,43 @@
+# Haohan Li · Research Portfolio
+
+重庆大学国家卓越工程师学院学生李浩涵的个人作品集，展示 RhinoPi X1、K230 视觉与云台联调和数学建模竞赛B题。
+
+公开网站：https://clgtwdll.github.io/
+
+本项目来自个人主页的独立副本，原版继续保留在本地。
+
+## 本地启动
+
+```powershell
+npm ci
+npm run dev
+```
+
+使用 Node.js 24，在项目目录运行上述命令，打开 http://127.0.0.1:4322/ 。原版仍使用 4321，可分别启动并对照。副本有自己的依赖、源码和构建产物。
+
+检查：`npm run check`；构建：`npm run build`；产物：`dist/`。
+
+## 结构
+
+- `src/data/profile.ts`：个人信息、教育、奖项和简历。副本英文名为 Haohan Li。
+- `src/data/projects.ts`：三个项目、真实贡献与结果、展示技术标签。
+- `src/components/`：共用导航、页脚、项目卡片、SVG 图标、图片和视频组件。
+- `src/pages/index.astro`：校园背景 Hero、项目卡片和三栏学术信息。
+- `src/pages/projects/index.astro`：全部项目入口，包含原有实验摘要链接。
+- `src/pages/projects/[slug].astro`：原有三个详情页。
+- `public/images/projects/`：原有真实项目图片。
+- `public/images/projects/rhinopi-reference.png`：对同一真实 URDF / STL 模型重新取景的静态 MuJoCo 渲染，轮子完整保留；未更改机器人模型或控制程序。
+- `public/images/campus-reference.png`：用户提供的完整参考图，字节未修改；Hero 通过 CSS 取景显示右上校园区域，未重绘或虚构校园照片。
+- `public/files/lihaohan-cv.pdf`：原有简历副本。
+
+按钮、项目标题、实验摘要、邮件、GitHub 和简历入口均使用真实目标。数学建模仓库为私有仓库，网站已明确标注访问限制，不改变项目仓库的可见性。
+
+## 发布与更新
+
+GitHub Pages 使用 GitHub Actions 构建和发布。`.github/workflows/deploy.yml` 在 `main` 分支收到提交时安装锁定依赖、执行 `astro check`、构建静态页面并发布 `dist/`。第三方 Action 固定到经过核验的提交。
+
+`astro.config.mjs` 的 `site` 为 `https://clgtwdll.github.io`；仓库名为 `CLGTWDLL.github.io`，无需项目子路径。不要直接部署到其他仓库子路径，否则须同时修改所有内部链接与资源路径。
+
+个人信息与项目文字分别在 `src/data/profile.ts`、`src/data/projects.ts`。替换图片或 PDF 后先运行检查、构建及本地预览，再提交至 `main`。
+
+不提交依赖目录、构建产物、环境变量或日志。源码中的参与工作和实验指标只反映已有记录；图片、简历与数据摘要属于个人项目展示素材，不声明额外授权许可。

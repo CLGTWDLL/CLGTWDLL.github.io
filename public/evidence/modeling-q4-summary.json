@@ -1,0 +1,9 @@
+{
+  "question": 4,
+  "policy": "q4_dynamic_policy",
+  "runs": 40,
+  "mean_virtual_s": 6183.911296602925,
+  "source_field": "mean_dynamic_virtual_s",
+  "source": "question4/data/对比40次/20260913-145508-pair40/comparison.json",
+  "metric": "virtual task time, not CPU or wall-clock time"
+}

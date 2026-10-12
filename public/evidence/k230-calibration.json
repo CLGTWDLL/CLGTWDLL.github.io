@@ -1,0 +1,15 @@
+{
+  "image_size": {
+    "width": 640,
+    "height": 640
+  },
+  "board": {
+    "inner_corners_columns": 11,
+    "inner_corners_rows": 8,
+    "square_size_mm": 15.0
+  },
+  "input_image_count": 30,
+  "successful_image_count": 29,
+  "total_rms_pixels": 0.3573903643727539,
+  "source": "Electronic/data/camera-calibration/camera_calibration.json"
+}
