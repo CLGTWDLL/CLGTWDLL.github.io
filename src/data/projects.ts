@@ -41,7 +41,7 @@ export const projects: Project[] = [
   },
   {
     tags: ['几何定位', '搜索策略', '仿真验证'],
-    slug: 'mathematical-modeling', name: '数学建模竞赛B题', englishName: '干扰源定位与清除', featured: false,
+    slug: 'mathematical-modeling', name: '干扰源定位与清除', englishName: '数学建模竞赛B题', featured: false,
     summary: '围绕无线电干扰源定位与清除，在第三题和第四题中研究几何定位、搜索策略与反馈修正，并进行仿真验证。',
     contributionSummary: '参与几何定位、搜索策略、实验复核和论文图表。',
     resultSummary: '第三题平均虚拟任务时间 3187.65 s；第四题平均虚拟任务时间 6183.91 s。',
