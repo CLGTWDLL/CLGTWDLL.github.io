@@ -9,11 +9,11 @@ import { projects } from '../data/projects';
     <p>{profile.name} / {profile.englishName} · {profile.university}</p>
     <p>{profile.introduction}</p>
     <section class="detail-section"><h2>项目经历</h2>
-      <ul>{projects.map(project => <li><a href={`/projects/${project.slug}/`}>{project.name}</a>：{project.contributionSummary}</li>)}</ul>
+      <ul>{projects.map(project => <li><a href={project.github} target="_blank" rel="noopener noreferrer">{project.name}</a>：{project.contributionSummary}</li>)}</ul>
     </section>
     <section class="detail-section"><h2>Education</h2>
       <p>{profile.university} · {profile.universityEnglish}</p>
-      <p class="muted">{[profile.college, profile.major, profile.educationPeriod].filter(Boolean).join(' · ') || '专业与就读时间待补充。'}</p>
+      <p class="muted">{[profile.college, profile.major, profile.educationPeriod].filter(Boolean).join(' · ')}</p>
     </section>
     <section class="detail-section"><h2>联系</h2>
       <p><a href={`mailto:${profile.email}`}>{profile.email}</a></p>

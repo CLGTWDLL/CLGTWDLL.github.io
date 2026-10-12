@@ -6,19 +6,18 @@ const { project, showEvidence = false } = Astro.props;
 ---
 <article class:list={['project-entry', `project-${project.slug}`, { primary: project.featured }]}>
   <figure class="project-preview">
-    <a class="project-image" href={`/projects/${project.slug}/`} aria-label={`查看${project.name}详情`}>
+    <a class="project-image" href={project.github} target="_blank" rel="noopener noreferrer" aria-label={`在 GitHub 查看 ${project.name}`}>
       <img src={project.image} alt={project.imageAlt} width="900" height="562" loading={project.featured ? 'eager' : 'lazy'} decoding="async" />
     </a>
     <figcaption>{project.imageCaption}</figcaption>
   </figure>
   <div class="project-copy">
-    <h3><a href={`/projects/${project.slug}/`}>{project.name}</a><span>{project.englishName}</span></h3>
+    <h3><a href={project.github} target="_blank" rel="noopener noreferrer">{project.name}</a><span>{project.englishName}</span></h3>
     <p class="project-summary">{project.summary}</p>
     <p class="project-fact"><strong>我的贡献：</strong><span>{project.contributionSummary}</span></p>
     <p class="project-fact"><strong>关键结果：</strong><span>{project.resultSummary}</span></p>
     <div class="project-links">
-      <a class="project-detail-link" href={`/projects/${project.slug}/`}>项目详情 <Icon name="right" size={14} /></a>
-      <a href={project.github} target="_blank" rel="noopener noreferrer">GitHub{project.githubPrivate ? '（访问受限）' : ''} ↗</a>
+      <a class="project-detail-link" href={project.github} target="_blank" rel="noopener noreferrer">GitHub 仓库 <Icon name="external" size={14} /></a>
       <span class="technology-label">{project.tags?.join(' ｜ ')}</span>
     </div>
     {showEvidence && <div class="evidence-links">{project.evidence.filter(item => item.url.startsWith('/')).map(item => <a href={item.url}>{item.label} ↗</a>)}</div>}

@@ -93,6 +93,7 @@ li { margin: 7px 0; }
 .footer-contact { display: flex; align-items: center; gap: 21px; }
 .footer-contact a { color: #5b6d8a; }
 .footer-contact a:last-child { color: var(--muted); }
+.footer-email { display: inline-flex; align-items: center; gap: 8px; }
 .project-catalog { padding: 34px 0; }
 .catalog-header { margin-bottom: 26px; }
 .catalog-header h1 { font-size: 31px; margin: 5px 0 10px; }
