@@ -89,7 +89,6 @@ li { margin: 7px 0; }
 .awards-list { list-style: none; margin: 0 0 0 6px; padding: 0 0 0 15px; border-left: 1px solid #d8e3f2; }
 .awards-list li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px; position: relative; font-size: 12px; line-height: 1.8; margin: 7px 0; align-items: baseline; }
 .awards-list li::before { content: ''; position: absolute; left: -19px; top: 9px; width: 7px; height: 7px; border-radius: 50%; background: #086dd8; }
-.featured-award > span:first-child { color: var(--ink); font-size: 16px; font-weight: 650; }
 .award-year { color: #8b9ab2; font-size: 11px; white-space: nowrap; }
 .interest-tags { display: flex; flex-direction: column; align-items: flex-start; gap: 9px; list-style: none; padding: 0; margin: 0; }
 .interest-tags li { max-width: 100%; margin: 0; padding: 4px 12px; color: #334967; background: #edf3fa; border-radius: 999px; font-size: 12px; line-height: 1.6; }

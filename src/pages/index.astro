@@ -27,7 +27,7 @@ const displayedAwards = [...profile.awards].sort((a, b) => Number(b.name === '�
     <div class="academic-grid">
       <section id="awards" class="info-panel awards-panel">
         <h2><Icon name="award" size={27} />Awards</h2>
-        <ul class="awards-list">{displayedAwards.map(award => <li class:list={{ 'featured-award': award.name === '国家奖学金' }}><span>{award.name}</span>{award.year && <span class="award-year">{award.year}</span>}</li>)}</ul>
+        <ul class="awards-list">{displayedAwards.map(award => <li><span>{award.name}</span>{award.year && <span class="award-year">{award.year}</span>}</li>)}</ul>
       </section>
       <section id="education" class="info-panel education-panel">
         <h2><Icon name="education" size={27} />Education</h2>
