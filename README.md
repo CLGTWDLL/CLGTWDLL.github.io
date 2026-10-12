@@ -27,7 +27,8 @@ npm run dev
 - `src/pages/projects/[slug].astro`：原有三个详情页。
 - `public/images/projects/`：原有真实项目图片。
 - `public/images/projects/rhinopi-reference.png`：对同一真实 URDF / STL 模型重新取景的静态 MuJoCo 渲染，轮子完整保留；未更改机器人模型或控制程序。
-- `public/images/campus-reference.png`：用户提供的完整参考图，字节未修改；Hero 通过 CSS 取景显示右上校园区域，未重绘或虚构校园照片。
+- `public/images/cqu-library.jpg`：用户提供的真实图书馆照片；个人信息区左侧背景通过 CSS 降低对比度、饱和度和透明度，并向右淡出，源照片保持不变。
+- `public/images/campus-reference.png`：保留的旧版参考图，当前主页不再使用。
 - `public/files/lihaohan-cv.pdf`：原有简历副本。
 
 按钮、项目标题、实验摘要、邮件、GitHub 和简历入口均使用真实目标。数学建模仓库为私有仓库，网站已明确标注访问限制，不改变项目仓库的可见性。
