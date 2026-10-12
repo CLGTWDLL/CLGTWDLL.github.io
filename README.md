@@ -23,8 +23,7 @@ npm run dev
 - `src/data/projects.ts`：三个项目、真实贡献与结果、展示技术标签。
 - `src/components/`：共用导航、页脚、项目卡片、SVG 图标、图片和视频组件。
 - `src/pages/index.astro`：校园背景 Hero、项目卡片和三栏学术信息。
-- `src/pages/projects/index.astro`：全部项目入口，包含原有实验摘要链接。
-- `astro.config.mjs`：三个历史详情地址直接跳转至对应 GitHub 仓库，不再生成站内项目详情内容。
+- `astro.config.mjs`：旧项目目录地址返回首页项目区，三个历史详情地址直接跳转至对应 GitHub 仓库；不再生成重复项目目录或详情内容。
 - `public/images/projects/`：原有真实项目图片。
 - `public/images/projects/rhinopi-reference.png`：对同一真实 URDF / STL 模型重新取景的静态 MuJoCo 渲染，轮子完整保留；未更改机器人模型或控制程序。
 - `public/images/cqu-library.jpg`：用户提供的真实图书馆照片；个人信息区左侧背景通过 CSS 降低对比度、饱和度和透明度，并向右淡出，源照片保持不变。

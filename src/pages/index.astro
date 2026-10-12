@@ -18,11 +18,6 @@ import { projects } from '../data/projects';
           <a href={profile.resumeUrl ?? '/resume/'}><Icon name="file" size={21} />简历 ↗</a>
         </div>
         <p class="biography">{profile.introduction}</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#projects">查看项目 <Icon name="down" size={15} /></a>
-          <a class="button button-secondary" href={profile.github} target="_blank" rel="noopener noreferrer">GitHub <Icon name="external" size={15} /></a>
-          <a class="button button-secondary" href={profile.resumeUrl ?? '/resume/'} download={profile.resumeUrl ? 'lihaohan-cv.pdf' : undefined}>简历下载 <Icon name="external" size={15} /></a>
-        </div>
       </div>
     </div>
   </section>
@@ -30,7 +25,6 @@ import { projects } from '../data/projects';
     <section id="projects" class="projects-section" aria-labelledby="projects-heading">
       <header class="section-header">
         <div><p class="section-kicker">PROJECTS</p><h2 id="projects-heading">Selected Projects</h2></div>
-        <a class="all-projects-link" href="/projects/">查看全部项目 <Icon name="right" size={14} /></a>
       </header>
       {projects.map(project => <ProjectEntry project={project} />)}
     </section>
