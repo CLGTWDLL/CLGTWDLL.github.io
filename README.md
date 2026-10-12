@@ -22,7 +22,7 @@ npm run dev
 - `src/data/profile.ts`：个人信息、教育、奖项和简历。副本英文名为 Haohan Li。
 - `src/data/projects.ts`：三个项目、真实贡献与结果、展示技术标签。
 - `src/components/`：共用导航、页脚、项目卡片、SVG 图标、图片和视频组件。
-- `src/pages/index.astro`：校园背景 Hero、项目卡片和三栏学术信息。
+- `src/pages/index.astro`：校园背景 Hero、Awards / Education / Research Interests 信息卡片、工程项目卡片。
 - `astro.config.mjs`：旧项目目录地址返回首页项目区，三个历史详情地址直接跳转至对应 GitHub 仓库；不再生成重复项目目录或详情内容。
 - `public/images/projects/`：原有真实项目图片。
 - `public/images/projects/rhinopi-reference.png`：对同一真实 URDF / STL 模型重新取景的静态 MuJoCo 渲染，轮子完整保留；未更改机器人模型或控制程序。

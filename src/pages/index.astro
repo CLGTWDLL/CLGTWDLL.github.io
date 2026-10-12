@@ -4,6 +4,7 @@ import ProjectEntry from '../components/ProjectEntry.astro';
 import Icon from '../components/Icon.astro';
 import { profile } from '../data/profile';
 import { projects } from '../data/projects';
+const displayedAwards = [...profile.awards].sort((a, b) => Number(b.name === '国家奖学金') - Number(a.name === '国家奖学金'));
 ---
 <BaseLayout>
   <section class="hero-banner" aria-labelledby="profile-name">
@@ -23,30 +24,35 @@ import { projects } from '../data/projects';
     </div>
   </section>
   <div class="container home-page">
-    <section id="projects" class="projects-section" aria-labelledby="projects-heading">
-      <header class="section-header">
-        <div><p class="section-kicker">PROJECTS</p><h2 id="projects-heading">Selected Projects</h2></div>
-      </header>
-      {projects.map(project => <ProjectEntry project={project} />)}
-    </section>
     <div class="academic-grid">
+      <section id="awards" class="info-panel awards-panel">
+        <h2><Icon name="award" size={27} />Awards</h2>
+        <ul class="awards-list">{displayedAwards.map(award => <li class:list={{ 'featured-award': award.name === '国家奖学金' }}><span>{award.name}</span>{award.year && <span class="award-year">{award.year}</span>}</li>)}</ul>
+      </section>
       <section id="education" class="info-panel education-panel">
         <h2><Icon name="education" size={27} />Education</h2>
         <div class="education-timeline">
-          <p><strong>{profile.university}</strong><span class="inline-meta">{profile.universityEnglish}</span></p>
+          <p><strong>{profile.university}</strong></p>
+          <p class="education-english">{profile.universityEnglish}</p>
           <p>{profile.college}</p>
           {profile.major && <p>{profile.major}</p>}
           <p class="education-period">{profile.educationPeriod}</p>
         </div>
       </section>
-      <section id="awards" class="info-panel awards-panel">
-        <h2><Icon name="award" size={27} />Awards</h2>
-        <ul class="awards-list">{profile.awards.map(award => <li><span>{award.name}</span>{award.year && <span class="award-year">{award.year}</span>}</li>)}</ul>
-      </section>
       <section id="interests" class="info-panel interests-panel">
         <h2><Icon name="bulb" size={27} />Research Interests</h2>
-        <p>{profile.interests.join(' / ')}：轮腿机构建模与控制、感知部署及系统联调。</p>
+        <ul class="interest-tags">
+          {profile.interests.map(interest => <li>{interest}</li>)}
+          <li>轮腿机构建模与控制</li>
+          <li>感知部署及系统联调</li>
+        </ul>
       </section>
     </div>
+    <section id="projects" class="projects-section" aria-labelledby="projects-heading">
+      <header class="section-header">
+        <div><p class="section-kicker">工程项目</p><h2 id="projects-heading">Engineering Projects</h2></div>
+      </header>
+      {projects.map(project => <ProjectEntry project={project} />)}
+    </section>
   </div>
 </BaseLayout>
