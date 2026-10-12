@@ -75,7 +75,7 @@ li { margin: 7px 0; }
 .technology-label { display: inline-flex; align-items: center; gap: 14px; margin-left: auto; font-size: 10px; line-height: 1.6; color: #788caf; }
 .technology-label::before { content: ''; display: inline-block; width: 25px; height: 1px; background: #c3d3ea; }
 .evidence-links { display: flex; flex-wrap: wrap; gap: 7px 20px; margin-top: 9px; font-size: 11px; }
-.academic-grid { display: grid; grid-template-columns: minmax(0, 1.9fr) minmax(0, .9fr) minmax(0, 1.05fr); margin: 0 0 28px; gap: 14px; }
+.academic-grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.9fr) minmax(0, 1.05fr); margin: 0 0 28px; gap: 14px; }
 .info-panel { min-width: 0; scroll-margin-top: 24px; padding: 16px; border: 1px solid var(--line); border-radius: 9px; background: #fcfdff; }
 .info-panel h2 { display: flex; align-items: center; gap: 12px; font-size: 20px; line-height: 1.4; margin-bottom: 16px; letter-spacing: -.3px; }
 .info-panel h2 .icon { color: #086dd8; }
@@ -147,7 +147,7 @@ li { margin: 7px 0; }
   .project-copy h3 { font-size: 22px; }
   .project-copy h3 span { display: block; margin: 4px 0 0; }
   .technology-label { margin-left: 0; }
-  .academic-grid { grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); }
+  .academic-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); }
   .interests-panel { grid-column: 1 / -1; }
   .interest-tags { flex-direction: row; flex-wrap: wrap; }
 }

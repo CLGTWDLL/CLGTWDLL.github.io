@@ -25,10 +25,6 @@ const displayedAwards = [...profile.awards].sort((a, b) => Number(b.name === 'å›
   </section>
   <div class="container home-page">
     <div class="academic-grid">
-      <section id="awards" class="info-panel awards-panel">
-        <h2><Icon name="award" size={27} />Awards</h2>
-        <ul class="awards-list">{displayedAwards.map(award => <li><span>{award.name}</span>{award.year && <span class="award-year">{award.year}</span>}</li>)}</ul>
-      </section>
       <section id="education" class="info-panel education-panel">
         <h2><Icon name="education" size={27} />Education</h2>
         <div class="education-timeline">
@@ -38,6 +34,10 @@ const displayedAwards = [...profile.awards].sort((a, b) => Number(b.name === 'å›
           {profile.major && <p>{profile.major}</p>}
           <p class="education-period">{profile.educationPeriod}</p>
         </div>
+      </section>
+      <section id="awards" class="info-panel awards-panel">
+        <h2><Icon name="award" size={27} />Awards</h2>
+        <ul class="awards-list">{displayedAwards.map(award => <li><span>{award.name}</span>{award.year && <span class="award-year">{award.year}</span>}</li>)}</ul>
       </section>
       <section id="interests" class="info-panel interests-panel">
         <h2><Icon name="bulb" size={27} />Research Interests</h2>
