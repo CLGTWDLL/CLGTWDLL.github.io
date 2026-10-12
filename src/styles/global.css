@@ -38,6 +38,7 @@ li { margin: 7px 0; }
 .contact-links a { display: inline-flex; align-items: center; gap: 9px; }
 .contact-links .icon-github { color: #586884; }
 .biography { max-width: 645px; font-size: 14px; line-height: 1.9; margin-top: 16px; }
+.hero-welcome { margin-top: 20px; color: #293d5a; font-size: 14px; line-height: 1.9; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
 .button { display: inline-flex; justify-content: center; align-items: center; gap: 11px; padding: 10px 21px; min-height: 42px; border: 1px solid transparent; border-radius: 8px; font-size: 14px; line-height: 1.5; font-weight: 500; }
 .button:hover { text-decoration: none; }
