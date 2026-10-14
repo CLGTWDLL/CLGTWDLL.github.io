@@ -15,7 +15,7 @@ export const profile = {
     { name: 'VEX 亚洲公开赛 VEXU 一等奖', year: '2025–2026' },
     { name: '科创青禾全国 VEX 精英赛 VEXU 一等奖', year: '2026' },
     { name: '国家奖学金', year: '2025–2026 学年' },
-    { name: '全国大学生电子设计竞赛重庆赛区省级三等奖', year: '' },
+    { name: '全国大学生电子设计竞赛重庆赛区省级三等奖', year: '2026' },
     { name: '重庆大学基础机器人训练赛冠军', year: '2024' },
   ] as { name: string; year: string }[],
   // Add your real PDF to public/files/, then set /files/lihaohan-cv.pdf here.
