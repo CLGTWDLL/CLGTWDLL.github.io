@@ -18,7 +18,7 @@ export const projects: Project[] = [
   {
     tags: ['URDF / STL', '仿真建模'],
     slug: 'rhinopi-x1', name: '轮腿机器人', englishName: '基于RhinoPi X1', featured: true,
-    summary: '基于五杆轮腿机构，开展机器人建模、LQR + VMC 控制仿真与 CAN / IMU 实机联调。',
+    summary: '基于五杆轮腿机构，开展机器人建模、LQR + VMC 控制仿真与实机联调。',
     contributionSummary: '五连杆机构设计与仿真调参，并进行实机联调',
     resultSummary: '在MuJoCo内部完成模型搭建，并实现了平衡和行走',
     github: 'https://github.com/CLGTWDLL/Wheel_Robot_Pi',
@@ -32,7 +32,7 @@ export const projects: Project[] = [
     slug: 'k230-vision', name: 'K230 视觉与云台联调', englishName: '目标检测与电机控制', featured: false,
     summary: '面向钢球检测与位置反馈，结合 K230 端侧视觉、STM32 云台控制与电机驱动联调。',
     contributionSummary: '参与数据采集、检测部署，以及视觉与云台、电机的接口联调。',
-    resultSummary: '相机标定 29 / 30 张成功，总重投影 RMS 为 0.357 px；通过串口开展视觉输出与云台电机控制联调。',
+    resultSummary: '通过串口开展视觉输出与云台电机控制联调。',
     github: 'https://github.com/CLGTWDLL/K230-Vision-Gimbal',
     image: '/images/projects/k230-detection.jpg',
     imageAlt: '钢球目标检测框和 Steel_ball 标签',

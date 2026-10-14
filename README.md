@@ -1,6 +1,6 @@
-# Haohan Li · Research Portfolio
+# Research Portfolio
 
-重庆大学国家卓越工程师学院学生李浩涵的个人作品集，展示 RhinoPi X1、K230 视觉与云台联调和数学建模竞赛B题。
+科研工程个人作品集，展示 RhinoPi X1、K230 视觉与云台联调和数学建模竞赛B题。
 
 公开网站：https://clgtwdll.github.io/
 
@@ -19,7 +19,7 @@ npm run dev
 
 ## 结构
 
-- `src/data/profile.ts`：个人信息、教育、奖项和简历。副本英文名为 Haohan Li。
+- `src/data/profile.ts`：个人信息、教育、奖项和简历。
 - `src/data/projects.ts`：三个项目、真实贡献与结果、展示技术标签。
 - `src/components/`：共用导航、页脚、项目卡片、SVG 图标、图片和视频组件。
 - `src/pages/index.astro`：校园背景 Hero、Awards / Education / Research Interests 信息卡片、工程项目卡片。
@@ -28,7 +28,7 @@ npm run dev
 - `public/images/projects/rhinopi-reference.png`：对同一真实 URDF / STL 模型重新取景的静态 MuJoCo 渲染，轮子完整保留；未更改机器人模型或控制程序。
 - `public/images/cqu-library.jpg`：用户提供的真实图书馆照片；个人信息区左侧背景通过 CSS 降低对比度、饱和度和透明度，并向右淡出，源照片保持不变。
 - `public/images/campus-reference.png`：保留的旧版参考图，当前主页不再使用。
-- `public/files/lihaohan-cv.pdf`：原有简历副本。
+- `public/files/`：简历文件。
 
 项目图片、标题和仓库按钮直接打开对应 GitHub 仓库。三个项目仓库均已公开；K230 仓库使用正式名称 `K230-Vision-Gimbal`。页脚的邮件图标与地址合并为一个入口。
 
