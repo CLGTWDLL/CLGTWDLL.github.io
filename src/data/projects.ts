@@ -17,14 +17,14 @@ export interface Project {
 export const projects: Project[] = [
   {
     tags: ['URDF / STL', '仿真建模'],
-    slug: 'rhinopi-x1', name: 'RhinoPi X1', englishName: '轮腿机器人', featured: true,
+    slug: 'rhinopi-x1', name: '轮腿机器人', englishName: '基于RhinoPi X1', featured: true,
     summary: '基于五杆轮腿机构，开展机器人建模、LQR + VMC 控制仿真与 CAN / IMU 实机联调。',
     contributionSummary: '参与五杆机构模型与 CAN / IMU 实机联调，协助仿真调参。',
     resultSummary: '完成五杆闭环 MuJoCo 模型搭建，并打通 CAN 电机通信与 IMU 姿态反馈链路。',
     github: 'https://github.com/CLGTWDLL/Wheel_Robot_Pi',
-    image: '/images/projects/rhinopi-reference.png',
-    imageAlt: '由 RhinoPi X1 仓库 URDF 和 STL 渲染的五杆轮腿机器人模型',
-    imageCaption: 'RhinoPi X1 五杆闭环 MuJoCo 模型渲染。',
+    image: '/images/projects/wheel-legged-demo.gif',
+    imageAlt: '基于 RhinoPi X1 的轮腿机器人实机演示动图',
+    imageCaption: '基于 RhinoPi X1 的轮腿机器人实机演示。',
     evidence: [],
   },
   {
