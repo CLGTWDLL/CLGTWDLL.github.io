@@ -29,14 +29,14 @@ export const projects: Project[] = [
   },
   {
     tags: ['目标检测', '云台控制', 'STM32', 'K230'],
-    slug: 'k230-vision', name: 'K230 视觉与云台联调', englishName: '目标检测与电机控制', featured: false,
+    slug: 'k230-vision', name: 'K230视觉与电机联调', englishName: '目标检测与电机控制', featured: false,
     summary: '面向钢球检测与位置反馈，结合 K230 端侧视觉、STM32 云台控制与电机驱动联调。',
     contributionSummary: '参与数据采集、检测部署，以及视觉与云台、电机的接口联调。',
     resultSummary: '通过串口开展视觉输出与云台电机控制联调。',
     github: 'https://github.com/CLGTWDLL/K230-Vision-Gimbal',
-    image: '/images/projects/k230-detection.jpg',
-    imageAlt: '钢球目标检测框和 Steel_ball 标签',
-    imageCaption: 'K230 项目钢球目标检测输出。',
+    image: '/images/projects/k230-motor-demo.gif',
+    imageAlt: 'K230视觉与电机联调实机演示动图，展示相机、钢球轨道与控制板',
+    imageCaption: 'K230视觉与电机联调实机演示。',
     evidence: [{ label: '标定结果摘要', url: '/evidence/k230-calibration.json' }],
   },
   {
