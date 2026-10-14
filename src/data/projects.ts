@@ -46,9 +46,9 @@ export const projects: Project[] = [
     contributionSummary: '参与几何定位、搜索策略、实验复核和论文图表。',
     resultSummary: '第三题平均虚拟任务时间 3187.65 s；第四题平均虚拟任务时间 6183.91 s。',
     github: 'https://github.com/CLGTWDLL/Mathtournament',
-    image: '/images/projects/modeling-results.png',
-    imageAlt: '第三题四十次本地仿真实验的虚拟任务时间统计图',
-    imageCaption: '第三题：40 次本地离线仿真实验统计。',
+    image: '/images/projects/modeling-paper-first-page.png',
+    imageAlt: '数学建模竞赛 B 题论文第一页的标题与部分摘要',
+    imageCaption: '数学建模竞赛 B 题论文首页：标题与部分摘要。',
     evidence: [
       { label: '第三题实验摘要', url: '/evidence/modeling-q3-summary.json' },
       { label: '第四题实验摘要', url: '/evidence/modeling-q4-summary.json' },
