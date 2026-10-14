@@ -50,7 +50,7 @@ const displayedAwards = [...profile.awards].sort((a, b) => Number(b.name === '�
     </div>
     <section id="projects" class="projects-section" aria-labelledby="projects-heading">
       <header class="section-header">
-        <div><p class="section-kicker">工程项目</p><h2 id="projects-heading">Engineering Projects</h2></div>
+        <div><h2 id="projects-heading">Engineering Projects</h2></div>
       </header>
       {projects.map(project => <ProjectEntry project={project} />)}
     </section>
