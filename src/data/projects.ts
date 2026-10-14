@@ -44,7 +44,7 @@ export const projects: Project[] = [
     slug: 'mathematical-modeling', name: '干扰源定位与清除', englishName: '数学建模竞赛B题', featured: false,
     summary: '围绕无线电干扰源定位与清除，在第三题和第四题中研究几何定位、搜索策略与反馈修正，并进行仿真验证。',
     contributionSummary: '参与几何定位、搜索策略、实验复核和论文图表。',
-    resultSummary: '采用几何定位、贝叶斯后验更新与覆盖搜索策略，完成第三、第四题的干扰源定位与清除仿真。',
+    resultSummary: '结合几何定位与贝叶斯更新，完成干扰源定位与清除仿真。',
     github: 'https://github.com/CLGTWDLL/Mathtournament',
     image: '/images/projects/modeling-paper-first-page.png',
     imageAlt: '数学建模竞赛 B 题论文第一页的标题与部分摘要',
